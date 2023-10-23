@@ -13,6 +13,8 @@
 		68A690122AE6904200035FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A690102AE6904200035FC7 /* Main.storyboard */; };
 		68A690142AE6904300035FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A690132AE6904300035FC7 /* Assets.xcassets */; };
 		68A690172AE6904300035FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A690152AE6904300035FC7 /* LaunchScreen.storyboard */; };
+		68A690222AE6949800035FC7 /* AppearenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A690212AE6949800035FC7 /* AppearenceViewController.swift */; };
+		68A690242AE694D700035FC7 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A690232AE694D700035FC7 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		68A690132AE6904300035FC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68A690162AE6904300035FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68A690182AE6904300035FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A690212AE6949800035FC7 /* AppearenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceViewController.swift; sourceTree = "<group>"; };
+		68A690232AE694D700035FC7 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		68A690092AE6904200035FC7 /* CalendarDayFinderApp */ = {
 			isa = PBXGroup;
 			children = (
-				68A6900A2AE6904200035FC7 /* AppDelegate.swift */,
-				68A6900C2AE6904200035FC7 /* SceneDelegate.swift */,
-				68A6900E2AE6904200035FC7 /* ViewController.swift */,
-				68A690102AE6904200035FC7 /* Main.storyboard */,
+				68A6901E2AE6905000035FC7 /* AppDelegate */,
+				68A6901F2AE6905900035FC7 /* Controller */,
+				68A690202AE6906300035FC7 /* Views */,
 				68A690132AE6904300035FC7 /* Assets.xcassets */,
-				68A690152AE6904300035FC7 /* LaunchScreen.storyboard */,
 				68A690182AE6904300035FC7 /* Info.plist */,
 			);
 			path = CalendarDayFinderApp;
+			sourceTree = "<group>";
+		};
+		68A6901E2AE6905000035FC7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				68A6900A2AE6904200035FC7 /* AppDelegate.swift */,
+				68A6900C2AE6904200035FC7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		68A6901F2AE6905900035FC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68A6900E2AE6904200035FC7 /* ViewController.swift */,
+				68A690212AE6949800035FC7 /* AppearenceViewController.swift */,
+				68A690232AE694D700035FC7 /* InfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68A690202AE6906300035FC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68A690102AE6904200035FC7 /* Main.storyboard */,
+				68A690152AE6904300035FC7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A690222AE6949800035FC7 /* AppearenceViewController.swift in Sources */,
 				68A6900F2AE6904200035FC7 /* ViewController.swift in Sources */,
 				68A6900B2AE6904200035FC7 /* AppDelegate.swift in Sources */,
 				68A6900D2AE6904200035FC7 /* SceneDelegate.swift in Sources */,
+				68A690242AE694D700035FC7 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
