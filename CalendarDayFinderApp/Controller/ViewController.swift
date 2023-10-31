@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         if segue.identifier == "info" {
             // Get the new view controller using segue.destination.
             guard let vc = segue.destination as? InfoViewController else { return }
-            
+            vc.info = "Info is here from VC"
             // Pass the selected object to the new view controller.
         }
     }
